@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Архив & Сервисы</title>
+    <style>
+        html { scroll-behavior: smooth; } /* Плавная прокрутка */
+        body {
+            font-family: sans-serif;
+            background-color: #0d0e11;
+            color: #e1e4ea;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        /* Фиксированное меню сверху */
+        .navbar {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background: #16181d;
+            border-bottom: 1px solid #292e38;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+            z-index: 100;
+        }
+        .nav-btn {
+            color: #8b949e;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: 500;
+            border-radius: 6px;
+            margin: 0 5px;
+            transition: 0.2s;
+        }
+        .nav-btn:hover { color: #00f0ff; background: #1f232b; }
+        
+        .main-content { max-width: 700px; width: 100%; padding: 20px; box-sizing: border-box; }
+        
+        /* Стили блоков и карточек */
+        section {
+            background: #16181d;
+            border: 1px solid #292e38;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 30px;
+            scroll-margin-top: 80px; /* Отступ сверху при прокрутке */
+        }
+        h2 { color: #ffffff; border-left: 4px solid #00f0ff; padding-left: 10px; margin-top: 0; }
+        p { color: #8b949e; }
+        
+        .news-item {
+            border-bottom: 1px solid #292e38;
+            padding-bottom: 15px;
+            margin-bottom: 15px;
+        }
+        .news-item:last-child {
+            border-bottom: none;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        .news-date {
+            font-size: 0.85rem;
+            color: #00f0ff;
+            font-weight: bold;
+        }
+        
+        .link-item {
+            background: #1f232b;
+            padding: 12px;
+            margin: 10px 0;
+            border-radius: 6px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .web-btn {
+            background: #00f0ff;
+            color: #0d0e11;
+            text-decoration: none;
+            padding: 6px 12px;
+            border-radius: 4px;
+            font-weight: 500;
+        }
+        .web-btn:hover { background: #00d8e6; }
+    </style>
+</head>
+<body>
+
+    <!-- Навигация по странице -->
+    <nav class="navbar">
+        <a href="#news" class="nav-btn">📰 Новости</a>
+        <a href="#browsers" class="nav-btn">🌐 Браузеры</a>
+        <a href="#os" class="nav-btn">💾 Загрузки ОС</a>
+        <a href="#services" class="nav-btn">✨ Сервисы</a>
+        <a href="#about" class="nav-btn">👤 Контакты</a>
+    </nav>
+
+    <main class="main-content">
+
+        <!-- Блок: Новости -->
+        <section id="news">
+            <h2>Лента обновлений</h2>
+            
+            <div class="news-item">
+                <div class="news-date">26.09.2026</div>
+                <p>Глобальное обновление навигации! Убрали лишние элементы интерфейса, оптимизировали структуру кода под будущий деплой на GitHub. Обновлены официальные контактные данные администратора.</p>
+            </div>
+            
+            <div class="news-item">
+                <div class="news-date">22.07.2026</div>
+                <p>Началась ревизия дистрибутивов Windows XP на серверах Old-DOS. Администраторы портала подтвердили, что продолжат сохранять чистые образы систем без вредоносных модификаций.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">10.07.2026</div>
+                <p>Успешные тесты One Core API версии 4.x. Данный слой совместимости позволяет запускать продвинутые WinAPI-инструкции прямо на старых сборках Windows XP SP1.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">03.07.2024</div>
+                <p>В открытый доступ выложена обновленная база хеш-сумм и текстовых логов для верификации официальных дистрибутивов Windows XP Professional SP3 VL на русском языке.</p>
+            </div>
+
+            <div class="news-item">
+                <div class="news-date">15.03.2024</div>
+                <p>Первый запуск проекта! Сайт зародился в самом обычном Блокноте на оригинальной системе Windows XP x32. Мы сохраняем этот пост как дань уважения цифровой ретро-археологии.</p>
+            </div>
+        </section>
+
+        <!-- Блок: Браузеры -->
+        <section id="browsers">
+            <h2>Скачать официальные браузеры</h2>
+            <div class="link-item"><span>🚀 Supermium Browser (для Win XP/7/8)</span><a href="https://github.com" target="_blank" class="web-btn">GitHub</a></div>
+            <div class="link-item"><span>🔥 Mozilla Firefox</span><a href="https://mozilla.org" target="_blank" class="web-btn">Скачать</a></div>
+            <div class="link-item"><span>🌐 Google Chrome</span><a href="https://google.com" target="_blank" class="web-btn">Скачать</a></div>
+            <div class="link-item"><span>⭕ Opera</span><a href="https://opera.com" target="_blank" class="web-btn">Скачать</a></div>
+        </section>
+
+        <!-- Блок: Загрузки ОС -->
+        <section id="os">
+            <h2>Ретро-дистрибутивы</h2>
+            <div class="link-item"><span>💿 Образ Windows XP Professional SP3</span><a href="https://yandex.ru" target="_blank" class="web-btn">Диск</a></div>
+            <div class="link-item"><span>🔑 Архив активаторов на Old-DOS</span><a href="http://old-dos.ru" target="_blank" class="web-btn">Old-DOS</a></div>
+        </section>
+
+        <!-- Блок: Сервисы -->
+        <section id="services">
+            <h2>Официальные сервисы</h2>
+            <div class="link-item"><span>🪟 Microsoft Official</span><a href="https://microsoft.com" target="_blank" class="web-btn">Перейти</a></div>
+            <div class="link-item"><span>✨ Google Gemini (ИИ)</span><a href="https://google.com" target="_blank" class="web-btn">Запустить</a></div>
+            <div class="link-item"><span>🔎 Google Поиск</span><a href="https://google.com" target="_blank" class="web-btn">Открыть</a></div>
+        </section>
+
+        <!-- Блок: Контакты -->
+        <section id="about">
+            <h2>О проекте</h2>
+            <p>Личная лаборатория тестирования софта. Связь со мной по почте:</p>
+            <div class="link-item">
+                <span>📧 Vadimka14072011@gmail.com</span>
+                <a href="mailto:Vadimka14072011@gmail.com" class="web-btn">Написать</a>
+            </div>
+        </section>
+
+    </main>
+
+</body>
+</html>
